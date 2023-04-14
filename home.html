@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+<!----          <li><a href="#certifications">Certifications</a></li> --->
+      </ul>
+    </nav>
+  </header>
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Hi, I'm Naveed Hakim</h2>
+      <p>I'm a Web Developer based in karachi. Welcome to my portfolio website!</p>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="filter">
+        <label for="tech">Filter by technology:</label>
+        <input type="text" id="tech" onkeyup="filterProjects()" placeholder="e.g. JavaScript">
+      </div>
+      <div id="project-list">
+        <div class="project" data-tech="React">
+          <h3>Jobby-Job Hunting WebApp</h3>
+          <p>Developed web application for hiring purpose where recruiters can post jobs and job seekers can apply for it.<br>
+            Features:<br>
+            Job Posting/Applying<br>
+            Interview Scheduling<br>
+            Email Verification/Notification<br></p>
+          <p>Technology used: React,NodeJS,MongoDB</p>
+        </div>
+        <div class="project" data-tech="Python">
+          <h3>Person Re-Identification Based Surveillance System</h3>
+          <p>A Web Application that processes input videos and identifies each person as authorised and unauthorised and keeps log of it</p>
+          <p>Technology used: Python, FastAPI,Pytorch,TensorFlow</p>
+        </div>
+       
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>My Education</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Institution</th>
+            <th>Degree</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2008-2012</td>
+            <td>XYZ High School</td>
+            <td>High School Diploma</td>
+          </tr>
+          <tr>
+            <td>2012-2016</td>
+            <td>ABC College</td>
+            <td>Bachelor's Degree in Computer Science</td>
+          </tr>
+          <tr>
+            <td>2016-2018</td>
+            <td>DEF University</td>
+            <td>Master's Degree in Software Engineering</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- JavaScript code -->
+    <script src="script.js"></script>
+  </body>
+</html>
